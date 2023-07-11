@@ -1,4 +1,4 @@
-.cardRes{
+.result-card{
     width: 100%;
     height: 100%;
     display: flex;
@@ -32,12 +32,13 @@
     margin: 0;
     padding: 0;
 }
-.cardRes > p{
+.result-card  p{
     width: 340px;
     text-align: center;
+    margin: 0 auto;
 }
 @media screen and (max-width: 567px){
-  .cardRes > p{
+  .result-card > p{
     width: 100%;
     text-align: center;
 }
