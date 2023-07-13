@@ -102,10 +102,10 @@ p{
     letter-spacing: 1.5px;
     transition: .3s ease-in;
   }
-  .sucess:hover{
-    background-color:  hsl(25, 100%, 48%);
-  }
   .sucess:active{
+    opacity: .7;
+  }
+  .sucess:hover{
     color: hsl(25, 97%, 53%);
     background: hsl(0, 0%, 100%);
   }
