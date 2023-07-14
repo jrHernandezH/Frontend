@@ -1,0 +1,124 @@
+.card{
+    width: 90%;
+    height: 95%;
+    border-radius: 10px;
+    background: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.card-header{
+    width: 90%;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.card-header> img{
+    border-radius: 10px ;
+    width: 95%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+.overlay{
+    width: 95%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: hsla(178, 100%, 50%, .3);
+    transition: opacity 0.3s ease;
+}
+.card-header:hover .overlay{
+  opacity: 1;
+  cursor: pointer;
+}
+.card-body{
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.card-title{
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    transition: color 0.5s ease;
+}
+.card-title:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.card-text{
+    margin: 5px 2px;
+    font-size: 16px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    opacity: .7;
+}
+.information{
+    margin: 0;
+    width: 95%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding: 2px 0;
+}
+.price{
+    width: 80px;
+    color: hsl(178, 100%, 50%);
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.time{
+    width: 90px;
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.creator{
+    margin: 5px 0;
+    margin-left: 5px;
+    width: 95%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.creator>img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.creator> p{
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+    letter-spacing: .03em;
+}
+
+p>span{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    transition: color 0.5s ease;
+}
+p>span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
