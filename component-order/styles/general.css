@@ -1,0 +1,34 @@
+@import url(./card.css);
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Red Hat Display';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/pattern-background-desktop.svg) 50% 0% / contain no-repeat hsl(225, 100%, 94%);
+    display: grid;
+    place-items: center;
+}
+.container{
+    width: 340px;
+    height: auto;
+}
+@media screen and (max-width:467px){
+        body{
+            background-image: url(../images/pattern-background-mobile.svg);
+            display:block;
+            height: 100vh;
+        }
+        .container{
+            width: 85%;
+            height: auto;
+           margin: 70px auto; 
+        }
+}
