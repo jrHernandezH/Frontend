@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend Deca:wght@400;500;600;700&display=swap');
+.panel{
+    width: 100%;
+    height: 100%;
+    background: hsl(244, 38%, 16%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.left-panel{
+    width: 45%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.panel-center{
+    width: 320px;
+    height: auto;
+}
+.panel-center h1{
+    color:  hsl(0, 0%, 100%);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.7em;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+}
+.panel-center h1 span{
+    color: hsl(277, 64%, 61%);
+    font-weight: 700;
+}
+.panel-center>p{
+    width: 290px;
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.55);
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6em;
+}
+.zone{
+    margin-top: 35px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    gap: 30px;
+}
+.box{
+    width: 80px;
+    height: 100%;
+}
+.box span{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3em;
+    font-family: 'Inter';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+.box p{
+    margin: 5px 0;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+/*Estilos para la imagen y el left panel*/
+.rigth-panel{
+    width: auto;
+    height: 100%;
+    background: hsl(277, 64%, 61%);
+    display: inline-block;
+    position: relative;
+    border-radius:  0 10px 10px  0;
+}
+.rigth-panel::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%);
+    mix-blend-mode: multiply;
+    z-index: 1;
+    border-radius:  0 10px 10px  0;
+  }
+.rigth-panel img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(0.7);
+    border-radius:  0 10px 10px  0;
+    
+}
+@media screen and (max-width:467px) {
+    .panel{
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+    .rigth-panel{
+        width: auto;
+        height: 35%;
+        background: hsl(277, 64%, 61%);
+        display: inline-block;
+        position: relative;
+        border-radius: 10px 10px 0 0 ;
+    }
+    .rigth-panel::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-color: hsl(277, 64%, 61%);
+        mix-blend-mode: multiply;
+        z-index: 1;
+        border-radius: 10px 10px 0 0 ;
+      }
+    .rigth-panel img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: contrast(0.7);
+        border-radius: 10px 10px 0 0 ;
+    }
+    .left-panel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .panel-center{
+        width: 90%;
+        height: auto;
+    }
+    .panel-center h1{
+        color:  hsl(0, 0%, 100%);
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 1.9em;
+        line-height: 1.2em;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .panel-center h1 span{
+        color: hsl(277, 64%, 61%);
+        font-weight: 700;
+    }
+    .panel-center>p{
+        width: 270px;
+        margin: 0 auto;
+        color: hsla(0, 0%, 100%, 0.55);
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.6em;
+        text-align: center;
+    }
+    .zone{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        width: auto;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box span{
+        font-size: 1.5em;
+        letter-spacing: 2px;
+    }
+    .box p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
