@@ -1,0 +1,120 @@
+@import url(./skills.css);
+/*Carpeta y archivos respectivos al about de mi portafolio*/
+.main{
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+.about{
+    width: 90%;
+    height: 461px;
+}
+.card{
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    display:flex;
+    align-items: start;
+    justify-content: center;
+    border-radius: 20px;
+    background: #353535;
+}
+.card-header{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.card-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-title h2{
+    color: #C2C2C2;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.line{
+    width: 300px;
+    height: 3px;
+    background: #D17509;
+}
+.card-body{
+    width: 42%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-body p{
+    margin: 5px auto;
+    text-align: justify;
+    color: #d8d2d2;
+    font-family: Raleway;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+@media Screen and (max-width:467px ) {
+    .about{
+        height: auto;
+    }
+    .card{
+        padding: 5px 0 20px;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+
+    }
+    .card-header{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .card-title{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .card-title h2{
+        color: #C2C2C2;
+        font-family: Poppins;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .line{
+        width: 150px;
+        height: 3px;
+        background: #D17509;
+    }
+    .my-photo{
+        width: 150px;
+        height: 150px;
+    }
+    .card-body{
+        opacity: 1;
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .card-body p{
+        font-size: 15px;
+    }
+}
