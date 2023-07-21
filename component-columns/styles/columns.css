@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend Deca:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+.colunm{
+    height: 85%;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 30px 40px;
+    gap: 40px;
+}
+.colunm h2{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.colunm p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.colunm button{
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Lexend Deca', sans-serif;;
+    font-weight: 400;
+    background:  hsl(0, 0%, 95%);
+    transition: color .3s ease-in-out;
+}
+.colunm button:hover{
+    background: none;
+    cursor: pointer;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+.colunm:first-child{
+    background: hsl(31, 77%, 52%);
+}
+.colunm:first-child button{
+    color: hsl(31, 77%, 52%);
+}
+.colunm:first-child button:hover, .colunm:nth-child(2) button:hover, .colunm:last-child button:hover{
+    color: hsl(0, 0%, 95%);
+}
+.colunm:nth-child(2){
+    background: hsl(184, 100%, 22%);
+}
+.colunm:nth-child(2) button{
+    color: hsl(184, 100%, 22%);
+}
+.colunm:last-child{
+    background: hsl(179, 100%, 13%);
+}
+.colunm:last-child button{
+    color: hsl(179, 100%, 13%);
+}
+@media screen and (max-width:467px) {
+    .colunm{
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        padding: 50px 40px;
+    }
+    
+}
