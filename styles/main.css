@@ -40,7 +40,7 @@
     font-weight: 700;
     line-height: normal;
 }
-.text-animation{
+.text-animation {
     color: #FFF;
     font-family: 'Montserrat';
     font-size: 19px;
@@ -48,7 +48,13 @@
     font-weight: 500;
     line-height: normal;
     margin: 0;
-}
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 240px;
+    height: 22px;
+  }
+
 .welcome {
     color: #C2C2C2;
     font-family: Poppins;

@@ -41,16 +41,21 @@
 .nav a{
     text-decoration: none;
     color: #817B7B;
-    transition: color .5s ease-in-out, border .2s ease-in-out;
+    transition: color .5s ease-in-out, border .3ms ease-in;
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 19px;
     letter-spacing: .1em;
     line-height: normal;
 }
-/*Dento de los a mantener una animacion para que cada link en el que se este se mantenga con los estilos (color y el borde)*/
+
 .nav a:hover{
     color: #c2aeae;
+}
+nav a.active {
+    font-weight: 500;
+    color: #ffffff;
+    border-bottom: #D17509 1px solid;
 }
 .git{
     font-size: 2em;
@@ -168,5 +173,8 @@
         text-align: center;
         border: 1px solid black;
         border-radius: 10px;
+    }
+    .menu-movil a.active {
+        background-color: #ffff;
     }
 }

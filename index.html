@@ -36,10 +36,12 @@
     <header class="header">
       <h1>Bobby</h1>
       <nav class="nav">
-        <a href="./index.html">Home</a>
-        <a href="./pages/About.html">About</a>
-        <a href="./pages/Portfolio.html">Portfolio</a>
-        <a href="./pages/Blog.html">Blog</a>
+        <a href="./index.html" id="index">Home</a>
+        <a href="./pages/About.html" id="About">About</a>
+        <a href="./pages/Portfolio.html" id="Portfolio"
+          >Portfolio</a
+        >
+        <a href="./pages/Blog.html" id="Blog">Blog</a>
       </nav>
       <a href="#" target="_blank">
         <i class="fab fa-github git"></i>
@@ -54,26 +56,13 @@
           <path class="line" d="M7 16 27 16"></path>
         </svg>
       </label>
-      <div class="menu">
-        <nav class="menu-movil">
-          <a href="./index.html">Home</a>
-          <a href="./pages/About.html">About</a>
-          <a href="./pages/Portfolio.html">Portfolio</a>
-          <a href="./pages/Blog.html">Blog</a>
-          <a href="#" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </nav>
-      </div>
     </header>
     <main class="main">
       <article class="home">
         <div class="personal-information">
           <span>Hello World, I'm</span>
           <h2>Hugo Hernandez</h2>
-          <p class="text-animation" id="texto-animado"
-            >Web Developer</p
-          ><!--Añadirle una animacion para que despues de cierto tiempo cambie el parrafo-->
+          <div class="text-animation" id="typingText"></div>
           <p class="welcome"
             >Welcome to My personal website
           </p>
@@ -87,5 +76,6 @@
       </article>
     </main>
     <script src="./js/menu.js"></script>
+    <script src="./js/text-animation.js"></script>
   </body>
 </html>

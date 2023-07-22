@@ -1,5 +1,12 @@
+.prueba{
+  position: absolute;
+  top: 10px;
+  left: 45%;
+  z-index: 999;
+}
 .main{
     width: 100%;
+    height: auto;
     flex-direction: column;
     align-items:start;
     justify-content: start;
@@ -39,8 +46,12 @@
     color: hsl(0, 0%, 100%);
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform .3s ease-in-out;
   }
-  
+  .card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
   .card-header {
     padding: 10px;
     width: 100%;
@@ -65,6 +76,7 @@
   }
   
   .card-body p {
+    height: 96px;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -116,5 +128,17 @@
       font-size: 1em;
       text-align: center;
   }
+}
+/*uso de media Screeen para tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .main{
+    height: auto;
   }
+  .container{
+    margin: 10px auto 50px;
+  }
+  .card{
+    width: 310px;
+  }
+}
 

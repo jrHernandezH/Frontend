@@ -118,3 +118,24 @@
         font-size: 15px;
     }
 }
+/*media Screen for tablets*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .card{
+        justify-content: space-around;
+    }
+    .my-photo{
+        width: 250px;
+        height: 250px;
+        margin: 40px 0;
+    }
+    .card-body{
+        width: 35%;
+    }
+    .card-header{
+        align-items: center;
+        justify-content: center;
+    }
+    .line{
+        width: 120px;
+    }
+}
