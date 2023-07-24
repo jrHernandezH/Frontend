@@ -1,0 +1,190 @@
+main{
+    width: 90%;
+    height: calc(100vh - 140px);
+    margin: 100px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.info{
+    width: 45%;
+}
+.info h2{
+    color: #FFF;
+    font-family: 'Lora';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.info p{
+    width: 410px;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.info button{
+    background: none;
+    border: none;
+    display: flex;
+    gap: 11px;
+
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.room-picture{
+    overflow: hidden;
+    width: 737px;
+    height: 555px;
+}
+.room-picture img{
+    width: 100%;
+}
+.info-person{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 700px;
+    right: 100px;
+
+    z-index: 999;
+    background: #181719;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.header-contain{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-contain h3{
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.description{
+    color: var(--gray-3, #828282);
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.info-person img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.info-person .design{
+    margin-left: 20px;
+    width: 287px;
+    color: #FFF;
+    font-family: 'Lora';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+@media screen and (max-width:467px) {
+    main{
+        flex-grow: 1;
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        height: auto;
+        align-items:start;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .info{
+        flex-grow: 1;
+        width: 100%;
+        margin: 0px auto 20px;
+    }
+    .info h2{
+        color: #FFF;
+        font-family: 'Lora';
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .info p{
+        width: 250px;
+        color: #FFF;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .info button{
+        color: #FFF;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .room-picture{
+        flex-grow: 6;
+        margin: 0 auto;
+        width: 280px;
+        height: 270px;
+    }
+    .info-person{
+        width: 250px;
+        height: auto;
+        top:63vh;
+        right: 50px;
+        z-index: 2;
+    }
+    .header-contain img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .title{
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .description{
+        color: var(--gray-3, #828282);
+        font-family: Montserrat;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .design{
+        color: #FFF;
+        font-family: Lora;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 0 5px ;
+    }
+}
+

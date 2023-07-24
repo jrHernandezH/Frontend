@@ -1,0 +1,109 @@
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 36%;
+}
+h1{
+    color: #FFF;
+    font-family: 'Crimson Pro';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 5px;
+    border: 1px solid #FFF;
+}
+nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    display: block;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+nav a:first-child{
+    border-bottom: 3px solid #FFF;
+}
+/*burguer menu*/
+.burguer-menu{
+    display: none;
+}
+
+@media Screen and (max-width:467px) {
+    .header{
+        flex-grow: 0;
+        height: 75px;
+    }
+    #menu{
+        display: none;
+    }
+    #menu.hidden {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        background: #181719;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+    }
+    #menu a{
+        margin: 10px 0;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    #menu a:first-child{
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    #burguer{
+        z-index: 3;
+    }
+    .burguer-menu{
+        display: block;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .line{
+        width: 100%;
+        height: 1px;
+        border: 1px solid #FFF;
+    }
+    #open:hover{
+        cursor: pointer;
+    }
+    #close{
+        display: none;
+    }
+}
