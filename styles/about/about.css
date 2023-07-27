@@ -43,7 +43,7 @@
     line-height: normal;
 }
 .line{
-    width: 300px;
+    width:  clamp(150px, 250px, 300px);
     height: 3px;
     background: #D17509;
 }

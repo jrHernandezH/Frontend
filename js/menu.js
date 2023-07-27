@@ -8,7 +8,7 @@ checkbox.addEventListener('change', function () {
         menu.classList.remove('show-menu');
     }
 });
-//Comportamiento de los a en el menu
+//Mostrar estilos una vez que se clickea un a dependiendo la ruta de url que contenga por ejemplo home.html = el id Home
 function obtenerNombreArchivoURL() {
     const rutaCompleta = window.location.pathname;
     const partesRuta = rutaCompleta.split('/'); // Divide la ruta en partes separadas por '/'
@@ -17,8 +17,19 @@ function obtenerNombreArchivoURL() {
     return nombre[0];
 }
 
-// Ejemplo de uso:
 const nombreArchivo = obtenerNombreArchivoURL();
 const link = document.getElementById(nombreArchivo);
 link.classList.add('active');
 
+
+//comportamiento del scroll al menu
+window.addEventListener("scroll", function () {
+    const menu = document.querySelector(".header");
+    const scrollY = window.scrollY;
+
+    if (scrollY > 100) { // Cambia el número 100 según sea necesario para ajustar el desplazamiento.
+        menu.classList.add("sticky");
+    } else {
+        menu.classList.remove("sticky");
+    }
+});
