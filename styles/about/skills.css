@@ -5,6 +5,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 10px;
+    animation: popVi 3s ease-in-out;
 }  
 .skill {
     width: auto;
@@ -61,11 +62,20 @@
     transform: scale(1.1);
     filter: drop-shadow(1px 1px 5px rgb(82, 7, 13));
 }
-  
+/*Animaciones*/
+@keyframes popVi {
+    to{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
+}
 @media screen and (max-width: 468px) {
     .container-skills {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, auto);
+        animation: popVi .3s ease-in;
     }
     .skill{
         height: 160px;

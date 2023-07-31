@@ -1,18 +1,21 @@
 
 .main{
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    align-items:start;
-    justify-content: start;
-    gap: 30px;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items:start;
+  justify-content: start;
+  gap: 30px;
+}
+.main-portafolio{
+  animation: popUp .7s ease-in-out;
 }
 .title-section{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .title-section h1{
     color: #fff;
@@ -100,7 +103,17 @@
     height: 24px;
     margin-right: 10px;
   }
-  
+  /*Animaciones*/
+  @keyframes popUp {
+    from{
+        position: relative;
+        top: 0;
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+  }
   @media screen and (max-width:467px) {
     .main{
       width: 100%;

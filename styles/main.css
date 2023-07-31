@@ -22,7 +22,9 @@
     justify-content: center;
     gap: 10px;
     overflow: hidden;
+    animation: slideleft  1s ease-in-out;
 }
+
 .personal-information span{
     color: #B86605;
     font-family: 'Raleway';
@@ -71,6 +73,9 @@
     box-sizing: border-box;
     overflow: hidden;
 }
+.index-photo{
+    animation: sliderigth  1s ease-in-out;
+}
 .my-photo img{
     width: 100%;
     height: 100%;
@@ -84,7 +89,34 @@
     cursor: pointer;
     transform: scale(1.1);
 }
+/*Animaciones*/
+@keyframes slideleft {
+    from {
+      transform: translateX(-900px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+@keyframes sliderigth {
+    from {
+      transform: translateX(900px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 @media screen and (max-width:467px) {
+    .personal-information{
+        animation: slideleft  .6s ease-in-out;
+    }
+    .index-photo{
+        animation: sliderigth  .6s ease-in-out;
+    }
     .header{
         width: 100%;
     }
@@ -98,4 +130,24 @@
         width: 300px;
         height: 400px;
     }
+    @keyframes slideleft {
+    from {
+      transform: translateX(-900px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+@keyframes sliderigth {
+    from {
+      transform: translateX(900px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 }

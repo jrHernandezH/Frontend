@@ -10,6 +10,7 @@
 .about{
     width: 90%;
     height: 461px;
+    animation: popUp  .8s ease-in-out;
 }
 .card{
     margin: 0 auto;
@@ -64,6 +65,17 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1.5em;
+}
+/*Animaciones*/
+@keyframes popUp {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
 }
 @media Screen and (max-width:467px ) {
     .about{
